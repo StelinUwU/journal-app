@@ -8,8 +8,8 @@ import { removeError, setError } from "../../actions/ui";
 const LoginScreen = () => {
   const dispatch = useDispatch();
   const [formValues, handleInputChange] = useForm({
-    email: "stelin@correo.com",
-    password: "123456",
+    email: "",
+    password: "",
   });
   const { email, password } = formValues;
   const { msgError, loading } = useSelector((state) => state.ui);
